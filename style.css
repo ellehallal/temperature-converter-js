@@ -26,18 +26,15 @@ body{
   padding: 2rem 1rem !important;
 }
 
-
-
-
-
-
-/* input[type=number]{
-  background: rgba(255, 130, 0, 0.68);
-  color: white !important;
-
+::-webkit-input-placeholder {
+  color: #FFFFFF !important;
 }
-
-input[type=number]:focus{
-  background: rgba(64, 255, 100, 0.48);
-
-} */
+::-moz-placeholder {
+  color: #FFFFFF !important;
+}
+:-ms-input-placeholder {
+  color: #FFFFFF !important;
+}
+:-moz-placeholder {
+  color: #FFFFFF !important;
+}
