@@ -9,14 +9,21 @@ body{
 
 .input-celsius{
   background-color: #52DDCF !important;
+  font-size: 2.5rem !important;
 }
 
 .input-fahrenheit{
   background-color: #16BAC5 !important;
+  font-size: 2.5rem !important;
 }
 
 .input-kelvin{
   background-color: #42a0d9 !important;
+  font-size: 2.5rem !important;
+}
+
+.form-control-lg {
+  padding: 2rem 1rem !important;
 }
 
 
