@@ -4,4 +4,11 @@
 
 body{
   margin-top: 60px;
+  text-align:center;
+}
+
+#form-celsius input[type=number]{
+  background-color: #3CBC8D;
+  color: white;
+
 }
