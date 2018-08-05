@@ -13,10 +13,15 @@ const celsiusToFaAndKe = () => {
 };
 
 
-// const fahrenheitToCeAndKe = () => {
-//   const fahrenheitTemp = parseFloat(fahrenheitInput.value);
-//   const celsiusTemp =
-//   const kelvinTemp =
-// };
+const fahrenheitToCeAndKe = () => {
+  const fahrenheitTemp = parseFloat(fahrenheitInput.value);
+  const celsiusTemp = (fahrenheitTemp - 32) * (5 / 9);
+  console.log(celsiusTemp);
+  const kelvinTemp = (fahrenheitTemp + 459.67) * (5 / 9);
+
+  celsiusInput.value = celsiusTemp;
+  kelvinInput.value = kelvinTemp;
+};
 
 celsiusInput.addEventListener('input', celsiusToFaAndKe);
+fahrenheitInput.addEventListener('input', fahrenheitToCeAndKe);
