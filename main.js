@@ -41,3 +41,5 @@ const main = () => {
   fahrenheitInput.addEventListener('input', fahrenheitToCeAndKe);
   kelvinInput.addEventListener('input', kelvinToCeAndFa);
 };
+
+main();

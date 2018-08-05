@@ -1,10 +1,14 @@
-/* *{
-  border: 1px solid red;
-} */
-
 body{
   margin-top: 60px;
   text-align:center;
+}
+
+h1 {
+  padding-bottom: 0.5rem;
+}
+
+input[type=number] {
+  cursor: pointer;
 }
 
 .input-celsius{
@@ -37,4 +41,15 @@ body{
 }
 :-moz-placeholder {
   color: #FFFFFF !important;
+}
+
+footer{
+  padding-top: 1.5rem;
+  font-size: 0.7rem;
+  line-height: 0.2rem;
+}
+
+.icons{
+  max-width: 25px;
+  height: auto;
 }
