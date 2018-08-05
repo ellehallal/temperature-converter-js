@@ -1,14 +1,36 @@
-*{
+/* *{
   border: 1px solid red;
-}
+} */
 
 body{
   margin-top: 60px;
   text-align:center;
 }
 
-#form-celsius input[type=number]{
-  background-color: #3CBC8D;
-  color: white;
+.input-celsius{
+  background-color: #52DDCF !important;
+}
+
+.input-fahrenheit{
+  background-color: #16BAC5 !important;
+}
+
+.input-kelvin{
+  background-color: #42a0d9 !important;
+}
+
+
+
+
+
+
+/* input[type=number]{
+  background: rgba(255, 130, 0, 0.68);
+  color: white !important;
 
 }
+
+input[type=number]:focus{
+  background: rgba(64, 255, 100, 0.48);
+
+} */
