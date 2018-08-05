@@ -12,7 +12,7 @@ const celsiusToFaAndKe = () => {
   const fahrenheitTemp = (celsiusTemp * 1.8) + 32;
   const kelvinTemp = celsiusTemp + 273.15;
 
-  fahrenheitInput.value = `°F${roundToTwoDP(fahrenheitTemp)}`;
+  fahrenheitInput.value = roundToTwoDP(fahrenheitTemp);
   kelvinInput.value = roundToTwoDP(kelvinTemp);
 };
 
@@ -32,9 +32,12 @@ const kelvinToCeAndFa = () => {
   const fahrenheitTemp =  1.8 * (kelvinTemp - 273) + 32;
 
   celsiusInput.value = roundToTwoDP(celsiusTemp);
-  fahrenheitInput.value = `°F${roundToTwoDP(fahrenheitTemp)}`;
+  fahrenheitInput.value = roundToTwoDP(fahrenheitTemp);
 };
 
-celsiusInput.addEventListener('input', celsiusToFaAndKe);
-fahrenheitInput.addEventListener('input', fahrenheitToCeAndKe);
-kelvinInput.addEventListener('input', kelvinToCeAndFa);
+
+const main = () => {
+  celsiusInput.addEventListener('input', celsiusToFaAndKe);
+  fahrenheitInput.addEventListener('input', fahrenheitToCeAndKe);
+  kelvinInput.addEventListener('input', kelvinToCeAndFa);
+};
