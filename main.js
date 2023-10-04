@@ -1,6 +1,7 @@
 const celsiusInput = document.querySelector('#celsius > input');
 const fahrenheitInput = document.querySelector('#fahrenheit > input');
 const kelvinInput = document.querySelector('#kelvin > input');
+const clearButton = document.getElementById('clearButton');
 
 const roundToTwoDP = (num) => {
   return num.toFixed(2);
@@ -35,11 +36,17 @@ const kelvinToCeAndFa = () => {
   fahrenheitInput.value = roundToTwoDP(fahrenheitTemp);
 };
 
+const clearFields = () => {
+  celsiusInput.value = '';
+  fahrenheitInput.value = '';
+  kelvinInput.value = '';
+};
 
 const main = () => {
   celsiusInput.addEventListener('input', celsiusToFaAndKe);
   fahrenheitInput.addEventListener('input', fahrenheitToCeAndKe);
   kelvinInput.addEventListener('input', kelvinToCeAndFa);
+  clearButton.addEventListener('click', clearFields);
 };
 
 main();
